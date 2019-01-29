@@ -1,0 +1,13 @@
+<?php
+							$count=1;
+							$sel_query="Select * from conf where id=7;";
+							$result = mysqli_query($con,$sel_query);
+							while($row = mysqli_fetch_assoc($result)) { ?>
+							<tr>
+								
+								
+								<?php echo $row["event_date"]; ?>
+								
+								
+							</tr>
+							<?php $count++; } ?>
